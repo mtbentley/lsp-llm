@@ -13,6 +13,8 @@ Provides four actions on highlighted text:
 4. `LLM Explain`: takes an optional commented question followed by highlighted
   code and explains the code or answers the question
 
+A lot of this code is simplified from https://github.com/python-lsp/python-lsp-server
+
 ## TODO
 In order of priority:
 - [ ] Finish settings

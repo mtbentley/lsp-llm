@@ -1,0 +1,36 @@
+[project]
+name = "lsp-llm"
+
+[tool.poetry]
+name = "lsp-llm"
+version = "0.1.0"
+description = ""
+authors = ["Madison Bentley <mbentley@hey.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+python-lsp-jsonrpc = "^1.1.2"
+litellm = "^1.56.10"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.14.1"
+black = "^24.10.0"
+pre-commit = "^4.0.1"
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[mypy]
+strict = true
+
+[tool.black]
+line-length = 79
+
+[project.scripts]
+llm_lsp = "lsp_llm.__main__:main"
+
+[tool.isort]
+profile = "black"
